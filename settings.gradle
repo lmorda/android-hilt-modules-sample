@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ListDeetz"
+include ':app'
+include ':coreData'
+include ':coreUi'
+include ':repoDetails'
+include ':repoList'
+include ':repoDetails:data'
+include ':repoDetails:domain'
+include ':repoList:data'
+include ':repoList:domain'

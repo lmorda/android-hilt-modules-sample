@@ -1,0 +1,8 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: "$rootDir/gradle-scripts/build_common.gradle"
+apply from: "$rootDir/gradle-scripts/build_hilt.gradle"
+apply from: "$rootDir/gradle-scripts/build_networking.gradle"

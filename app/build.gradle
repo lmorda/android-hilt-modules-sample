@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: "$rootDir/gradle-scripts/build_common.gradle"
+apply from: "$rootDir/gradle-scripts/build_hilt.gradle"
+apply from: "$rootDir/gradle-scripts/build_ui.gradle"
+
+android {
+    defaultConfig {
+        applicationId "com.lmorda.listdetails"
+    }
+}
+
+dependencies {
+    implementation project(':coreUi')
+}

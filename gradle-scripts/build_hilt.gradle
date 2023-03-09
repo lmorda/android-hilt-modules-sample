@@ -1,0 +1,11 @@
+apply plugin: "kotlin-kapt"
+apply plugin: "com.google.dagger.hilt.android"
+
+dependencies {
+    implementation "com.google.dagger:hilt-android:2.45"
+    kapt "com.google.dagger:hilt-compiler:2.45"
+}
+
+kapt {
+    correctErrorTypes true
+}
