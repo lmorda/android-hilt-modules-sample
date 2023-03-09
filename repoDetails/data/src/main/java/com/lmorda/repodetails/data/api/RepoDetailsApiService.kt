@@ -1,6 +1,6 @@
 package com.lmorda.repodetails.data.api
 
-import com.lmorda.repodetails.domain.RepoDetails
+import com.lmorda.coredata.api.model.RepoDetailsDto
 import retrofit2.http.GET
 import retrofit2.http.Query
 import javax.inject.Singleton
@@ -11,6 +11,6 @@ interface RepoDetailsApiService {
     @GET("/search/repositories")
     suspend fun getGithubRepo(
         @Query("id") id: Long
-    ): RepoDetails?
+    ): RepoDetailsDto?
 
 }

@@ -9,5 +9,6 @@ apply from: "$rootDir/gradle-scripts/build_networking.gradle"
 
 dependencies {
     implementation project(':coreData')
+    implementation project(':coreDomain')
     implementation project(':repoDetails:domain')
 }

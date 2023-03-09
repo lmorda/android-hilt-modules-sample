@@ -15,6 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = "ListDeetz"
 include ':app'
 include ':coreData'
+include ':coreDomain'
 include ':coreUi'
 include ':repoDetails'
 include ':repoList'

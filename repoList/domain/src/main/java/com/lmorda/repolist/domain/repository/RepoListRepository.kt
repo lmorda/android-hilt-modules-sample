@@ -1,6 +1,6 @@
 package com.lmorda.repolist.domain.repository
 
-import com.lmorda.repolist.domain.RepoList
+import com.lmorda.coredomain.model.RepoList
 
 interface RepoListRepository {
 

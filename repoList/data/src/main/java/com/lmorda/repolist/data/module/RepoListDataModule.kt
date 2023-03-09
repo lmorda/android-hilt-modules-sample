@@ -1,5 +1,6 @@
 package com.lmorda.repolist.data.module
 
+import com.lmorda.coredata.api.mapper.RepoListMapper
 import com.lmorda.repolist.data.api.RepoListApiService
 import com.lmorda.repolist.data.repository.RepoListRepositoryImpl
 import com.lmorda.repolist.domain.repository.RepoListRepository
@@ -16,8 +17,11 @@ object RepoListDataModule {
 
     @Provides
     @Singleton
-    fun provideDataRepository(apiService: RepoListApiService): RepoListRepository =
-        RepoListRepositoryImpl(apiService)
+    fun provideDataRepository(
+        apiService: RepoListApiService,
+        repoListMapper: RepoListMapper
+    ): RepoListRepository =
+        RepoListRepositoryImpl(apiService, repoListMapper)
 
     @Provides
     @Singleton

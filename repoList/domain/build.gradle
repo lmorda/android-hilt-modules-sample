@@ -4,3 +4,7 @@ plugins {
 }
 
 apply from: "$rootDir/gradle-scripts/build_common.gradle"
+
+dependencies {
+    implementation project(':coreDomain')
+}

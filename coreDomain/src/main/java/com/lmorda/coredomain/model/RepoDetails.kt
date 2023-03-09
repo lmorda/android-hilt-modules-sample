@@ -1,4 +1,4 @@
-package com.lmorda.repodetails.domain
+package com.lmorda.coredomain.model
 
 data class RepoDetails(
     val name: String,
