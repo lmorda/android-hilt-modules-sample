@@ -1,5 +1,4 @@
 android {
-    namespace 'com.lmorda.listdetails'
     compileSdk 33
     defaultConfig {
         minSdk 28

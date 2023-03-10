@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.lmorda.repolist.domain.repository.RepoListRepository
 import javax.inject.Inject
 
-class GithubReposViewModel @Inject constructor(
+class RepoListViewModel @Inject constructor(
     private val dataRepository: RepoListRepository
 ) : ViewModel() {
 

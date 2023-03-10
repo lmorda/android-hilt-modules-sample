@@ -49,6 +49,7 @@ object ApiModule {
         converterFactory: Converter.Factory,
     ): Retrofit = Retrofit.Builder()
         .baseUrl(GITHUB_BASE_URL)
+        .client(okHttpClient)
         .addConverterFactory(converterFactory)
         .build()
 
