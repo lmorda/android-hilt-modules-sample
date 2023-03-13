@@ -1,9 +1,12 @@
 plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
 }
 
-apply from: "$rootDir/gradle-scripts/build_common.gradle"
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 dependencies {
     implementation project(':coreDomain')
